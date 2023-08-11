@@ -8,7 +8,7 @@ function preload() {
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    angleMode(DEGREES);
+    angleMode(RADIANS);
     zoomManager = new ZoomManager();
     initializeSolarSystem();
 }
@@ -50,8 +50,6 @@ function mouseWheel(event) {
     } else {
         zoomManager.settings.globalLevel *= zoomFactor; // Zoom in
     }
-
-    zoomManager.settings.globalLevel = constrain(zoomManager.settings.globalLevel, 0.05, 100);
 }
 
 function windowResized() {

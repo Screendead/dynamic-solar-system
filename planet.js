@@ -1,3 +1,4 @@
+const ORBIT_SPEED_SCALE = 1 / 10;
 const RADIUS_SCALE = 1 / 100000;
 const DISTANCE_SCALE = 1 / 1000000;
 
@@ -7,7 +8,7 @@ class Planet {
         this.radius = radius;
         this.angle = random(TWO_PI);
         this.distance = distance;
-        this.orbitSpeed = orbitSpeed; 
+        this.orbitSpeed = orbitSpeed * ORBIT_SPEED_SCALE;
         this.col = col;
     }
     
