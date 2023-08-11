@@ -3,13 +3,14 @@ const RADIUS_SCALE = 1 / 100000;
 const DISTANCE_SCALE = 1 / 1000000;
 
 class Planet {
-    constructor(name, radius, distance, orbitSpeed, col) {
+    constructor(name, radius, distance, orbitSpeed, col, info) {
         this.name = name;
         this.radius = radius;
         this.angle = random(TWO_PI);
         this.distance = distance;
         this.orbitSpeed = orbitSpeed * ORBIT_SPEED_SCALE;
         this.col = col;
+        this.info = info;
     }
     
     orbit() {
@@ -25,14 +26,14 @@ class Planet {
         // Display click area
         stroke(255);
         noFill();
-        ellipse(screenCoords.x, screenCoords.y, this.radius * 2 * RADIUS_SCALE + 20);
+        ellipse(screenCoords.x, screenCoords.y, scaled(this.radius * 2 * RADIUS_SCALE + 20));
         
         // Display planet name
         fill(255);
         noStroke();
-        textSize(12);
+        textSize(12 / zoomManager.settings.level / zoomManager.settings.globalLevel);
         textAlign(CENTER, CENTER);
-        text(this.name, screenCoords.x, screenCoords.y + 16 + this.radius * RADIUS_SCALE);
+        text(this.name, screenCoords.x, screenCoords.y + scaled(16) + this.radius * RADIUS_SCALE);
     }
 
     displayOrbit() {
@@ -43,12 +44,12 @@ class Planet {
     }
 
     clicked(mx, my) {
-        let worldX = (mx - width / 2) / (zoomManager.settings.level * zoomManager.settings.globalLevel) + zoomManager.settings.cameraX;
-        let worldY = (my - height / 2) / (zoomManager.settings.level * zoomManager.settings.globalLevel) + zoomManager.settings.cameraY;
+        let worldX = scaled(mx - width / 2) + zoomManager.settings.cameraX;
+        let worldY = scaled(my - height / 2) + zoomManager.settings.cameraY;
 
         let planetCoords = this.getScreenCoords(0, 0);
 
-        return dist(worldX, worldY, planetCoords.x, planetCoords.y) < this.radius * RADIUS_SCALE + 10;
+        return dist(worldX, worldY, planetCoords.x, planetCoords.y) < scaled(this.radius * RADIUS_SCALE + 10);
     }
 
     getScreenCoords(x, y) {
@@ -58,4 +59,8 @@ class Planet {
         };
         return result;
     }
+}
+
+function scaled(num) {
+    return num / zoomManager.settings.level / zoomManager.settings.globalLevel;
 }

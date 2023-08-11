@@ -3,60 +3,70 @@
         "radius": 696340,
         "distance": 0,
         "orbitSpeed": 0,
-        "color": [255, 255, 0]
+        "color": [255, 255, 0],
+        "info": "The Sun is the star at the center of our solar system. It's responsible for 99.86% of the total mass in our solar system."
     },
     "Mercury": {
         "radius": 2440,
         "distance": 57900000,
         "orbitSpeed": 0.024,
-        "color": [200, 100, 50]
+        "color": [200, 100, 50],
+        "info": "Mercury is the smallest and innermost planet in our solar system. It has no moons."
     },
     "Venus": {
         "radius": 6052,
         "distance": 108200000,
         "orbitSpeed": 0.018,
-        "color": [200, 165, 130]
+        "color": [200, 165, 130],
+        "info": "Venus is the second planet from the Sun. It has a similar size to Earth but features extreme temperatures and thick clouds of sulfuric acid."
     },
     "Earth": {
         "radius": 6371,
         "distance": 149600000,
         "orbitSpeed": 0.016,
-        "color": [50, 100, 255]
+        "color": [50, 100, 255],
+        "info": "Earth is the third planet from the Sun and the only known astronomical object to harbor life. It has one moon, known as the Moon."
     },
     "Mars": {
         "radius": 3389.5,
         "distance": 227900000,
         "orbitSpeed": 0.014,
-        "color": [255, 0, 0]
+        "color": [255, 0, 0],
+        "info": "Mars, often called the Red Planet, is the fourth planet from the Sun. It has the highest mountain and deepest canyon in the solar system."
     },
     "Jupiter": {
         "radius": 69911,
         "distance": 778300000,
         "orbitSpeed": 0.008,
-        "color": [255, 200, 130]
+        "color": [255, 200, 130],
+        "info": "Jupiter is the largest planet in our solar system and has a powerful magnetic field. It's known for the Great Red Spot, a storm that has raged for hundreds of years."
     },
     "Saturn": {
         "radius": 58232,
         "distance": 1426700000,
         "orbitSpeed": 0.006,
-        "color": [230, 205, 150]
+        "color": [230, 205, 150],
+        "info": "Saturn is the sixth planet from the Sun and is best known for its stunning ring system. It has over 60 known moons."
     },
     "Uranus": {
         "radius": 25362,
         "distance": 2870900000,
         "orbitSpeed": 0.004,
-        "color": [173, 216, 230]
+        "color": [173, 216, 230],
+        "info": "Uranus is a blue planet due to the presence of water and ammonia in its atmosphere. It rotates on its side, making its seasonal changes extreme."
     },
     "Neptune": {
         "radius": 24622,
         "distance": 4498200000,
         "orbitSpeed": 0.003,
-        "color": [70, 130, 180]
+        "color": [70, 130, 180],
+        "info": "Neptune, the eighth planet from the Sun, is known for its strong winds, sometimes blowing at supersonic speeds. It has 14 known moons."
     },
     "Pluto": {
         "radius": 1188.3,
         "distance": 5900000000,
         "orbitSpeed": 0.002,
-        "color": [200, 200, 200]
+        "color": [200, 200, 200],
+        "info": "Pluto, once considered the ninth planet, is now classified as a dwarf planet. It has a heart-shaped glacier that's the size of Texas and Oklahoma."
     }
 }
