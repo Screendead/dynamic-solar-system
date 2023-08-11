@@ -1,0 +1,62 @@
+{
+    "Sun": {
+        "radius": 696340,
+        "distance": 0,
+        "orbitSpeed": 0,
+        "color": [255, 255, 0]
+    },
+    "Mercury": {
+        "radius": 2440,
+        "distance": 57900000,
+        "orbitSpeed": 0.024,
+        "color": [200, 100, 50]
+    },
+    "Venus": {
+        "radius": 6052,
+        "distance": 108200000,
+        "orbitSpeed": 0.018,
+        "color": [200, 165, 130]
+    },
+    "Earth": {
+        "radius": 6371,
+        "distance": 149600000,
+        "orbitSpeed": 0.016,
+        "color": [50, 100, 255]
+    },
+    "Mars": {
+        "radius": 3389.5,
+        "distance": 227900000,
+        "orbitSpeed": 0.014,
+        "color": [255, 0, 0]
+    },
+    "Jupiter": {
+        "radius": 69911,
+        "distance": 778300000,
+        "orbitSpeed": 0.008,
+        "color": [255, 200, 130]
+    },
+    "Saturn": {
+        "radius": 58232,
+        "distance": 1426700000,
+        "orbitSpeed": 0.006,
+        "color": [230, 205, 150]
+    },
+    "Uranus": {
+        "radius": 25362,
+        "distance": 2870900000,
+        "orbitSpeed": 0.004,
+        "color": [173, 216, 230]
+    },
+    "Neptune": {
+        "radius": 24622,
+        "distance": 4498200000,
+        "orbitSpeed": 0.003,
+        "color": [70, 130, 180]
+    },
+    "Pluto": {
+        "radius": 1188.3,
+        "distance": 5900000000,
+        "orbitSpeed": 0.002,
+        "color": [200, 200, 200]
+    }
+}
